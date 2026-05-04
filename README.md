@@ -12,8 +12,10 @@
 <p align="center"><em>一个暗色 VS Code 主题，低对比度配色 + 语义高亮，看代码不累。</em></p>
 
 <p align="center">
-  <img src="assets/overview.png" alt="界面" width="49%" />
-  <img src="assets/git.png" alt="Git" width="49%" />
+  <img src="assets/overview.png" alt="界面" />
+</p>
+<p align="center">
+  <img src="assets/git.png" alt="Git" />
 </p>
 
 ---

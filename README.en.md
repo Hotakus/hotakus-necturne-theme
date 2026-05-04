@@ -12,8 +12,10 @@
 <p align="center"><em>A dark VS Code theme with low-contrast colors and semantic highlighting.</em></p>
 
 <p align="center">
-  <img src="assets/overview.png" alt="Overview" width="49%" />
-  <img src="assets/git.png" alt="Git" width="49%" />
+  <img src="assets/overview.png" alt="Overview" />
+</p>
+<p align="center">
+  <img src="assets/git.png" alt="Git" />
 </p>
 
 ---

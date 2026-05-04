@@ -1,0 +1,104 @@
+<!-- SVG Example — shapes, gradients, paths, transforms
+     Hotakus's Nocturne Theme Preview -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 800 600"
+     width="800" height="600">
+
+  <!-- ── Definitions / Gradients ────────────────────────── -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#2c2c2c" />
+      <stop offset="50%"  stop-color="#3a3a4a" />
+      <stop offset="100%" stop-color="#2c2c3a" />
+    </linearGradient>
+
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#4fc3f7" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#4fc3f7" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.4" />
+    </filter>
+
+    <clipPath id="circleClip">
+      <circle cx="200" cy="200" r="120" />
+    </clipPath>
+  </defs>
+
+  <!-- ── Background ────────────────────────────────────── -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+
+  <!-- ── Group with Transform ──────────────────────────── -->
+  <g transform="translate(80, 60)" filter="url(#shadow)">
+    <!-- Rectangle -->
+    <rect x="0"   y="0"   width="200" height="120" rx="12"
+          fill="#3a3a4a" stroke="#4fc3f7" stroke-width="2" />
+
+    <!-- Circle -->
+    <circle cx="300" cy="60" r="60"
+            fill="none" stroke="#eaab7c" stroke-width="3" />
+
+    <!-- Ellipse -->
+    <ellipse cx="450" cy="60" rx="80" ry="40"
+             fill="#d09090" opacity="0.6" />
+
+    <!-- Line -->
+    <line x1="560" y1="10" x2="640" y2="110"
+          stroke="#8ab0b8" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- ── Path ───────────────────────────────────────────── -->
+  <g transform="translate(80, 220)">
+    <path d="M 0,0 L 100,0 L 100,80 L 50,120 L 0,80 Z"
+          fill="#5a8668" stroke="#81b88b" stroke-width="2" />
+    <path d="M 140,0 Q 200,60 140,120 Q 80,60 140,0"
+          fill="none" stroke="#c0a068" stroke-width="2" stroke-dasharray="6,3" />
+    <path d="M 260,60 C 300,0 360,0 400,60 C 440,120 380,120 330,80"
+          fill="none" stroke="#d1925b" stroke-width="2.5" />
+  </g>
+
+  <!-- ── Polygon & Polyline ─────────────────────────────── -->
+  <g transform="translate(80, 390)">
+    <polygon points="0,60 60,0 120,60 60,120"
+             fill="#c08078" stroke="#e87d77" stroke-width="2" />
+    <polyline points="160,0 200,40 240,10 280,70 320,30"
+              fill="none" stroke="#8a9a8a" stroke-width="2" stroke-linejoin="round" />
+    <polygon points="380,20 420,80 340,80"
+             fill="#d0a060" opacity="0.7" />
+  </g>
+
+  <!-- ── Text ───────────────────────────────────────────── -->
+  <g transform="translate(560, 180)">
+    <text x="0" y="0"
+          font-family="monospace" font-size="28" font-weight="700"
+          fill="#eaab7c"
+          text-anchor="middle">
+      Nocturne
+    </text>
+    <text x="0" y="40"
+          font-family="monospace" font-size="14"
+          fill="#8a9a9a"
+          text-anchor="middle">
+      Hotakus&apos;s SVG theme preview
+    </text>
+    <text x="0" y="80"
+          font-family="system-ui" font-size="12"
+          fill="#6a8a80"
+          text-anchor="middle"
+          text-decoration="underline">
+      Shapes &amp; Gradients &amp; Paths
+    </text>
+  </g>
+
+  <!-- ── Overlay Circle ─────────────────────────────────── -->
+  <circle cx="700" cy="520" r="80"
+          fill="url(#glow)" />
+
+  <!-- ── Small Icons (rect + lines) ─────────────────────── -->
+  <g transform="translate(660, 500)" stroke="#b8b8b8" stroke-width="2" fill="none">
+    <line x1="0" y1="0" x2="0" y2="20" />
+    <line x1="0" y1="10" x2="20" y2="10" stroke="#769f99" />
+  </g>
+
+</svg>

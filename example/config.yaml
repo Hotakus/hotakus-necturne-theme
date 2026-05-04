@@ -1,0 +1,70 @@
+# config.yaml — Hotakus's Nocturne Theme Preview
+
+# --- Scalars ---
+app:
+  name: nocturne
+  version: "1.0.0"
+  debug: false
+
+# --- Nested Mapping ---
+server:
+  host: 0.0.0.0
+  port: 8080
+  tls:
+    enabled: true
+    cert_path: /etc/ssl/cert.pem
+    key_path: /etc/ssl/key.pem
+
+# --- Lists ---
+databases:
+  - name: postgres
+    driver: pg
+    host: localhost
+    port: 5432
+  - name: redis
+    driver: redis
+    host: localhost
+    port: 6379
+    pool_size: 10
+
+# --- Anchors & Aliases ---
+defaults: &defaults
+  timeout: 5000
+  retries: 3
+  backoff: exponential
+
+services:
+  auth:
+    <<: *defaults
+    endpoint: https://auth.example.com
+  cache:
+    <<: *defaults
+    endpoint: redis://localhost:6379
+    timeout: 2000  # override
+
+# --- Multiline String ---
+description: |
+  This is a multiline string
+  that preserves line breaks.
+  Useful for configuration.
+
+# --- Folded Multiline ---
+comment: >
+  This is a folded multiline string.
+  All line breaks become spaces,
+  except for double newlines.
+
+# --- Flow Style ---
+tags: [theme, dark, vscode, yaml]
+coordinates: { x: 10, y: 20, z: 30 }
+
+# --- Boolean & Null ---
+enabled: true
+deprecated: false
+notes: ~
+
+# --- Integer & Float ---
+limits:
+  max_connections: 64
+  ratio: 0.75
+  scientific: 1.5e-3

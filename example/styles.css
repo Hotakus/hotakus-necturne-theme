@@ -1,0 +1,117 @@
+/* CSS Example — custom properties, selectors, animations, media queries */
+/* Hotakus's Nocturne Theme Preview */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+/* --- Custom Properties --- */
+:root {
+  --color-primary: #4fc3f7;
+  --color-danger: #ef5350;
+  --color-text: #b8b8b8;
+  --color-bg: #2c2c2c;
+  --radius: 8px;
+  --spacing: 1rem;
+}
+
+/* --- Reset --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* --- Base --- */
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/* --- Layout --- */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 var(--spacing);
+}
+
+/* --- Flex / Grid --- */
+.flex-row {
+  display: flex;
+  gap: var(--spacing);
+  align-items: center;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing);
+}
+
+/* --- Component --- */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #444;
+  border-radius: var(--radius);
+  padding: var(--spacing);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em 1.2em;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.15s;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #000;
+}
+
+.btn-primary:active {
+  opacity: 0.8;
+}
+
+/* --- Keyframes --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* --- Media Query --- */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  .flex-row {
+    flex-direction: column;
+  }
+}
+
+/* --- Pseudo-classes --- */
+a:link { color: var(--color-primary); }
+a:visited { color: #ba68c8; }
+a:hover { text-decoration: underline; }
+
+/* --- Attribute Selector --- */
+input[type="text"]:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}

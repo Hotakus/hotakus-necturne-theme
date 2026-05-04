@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Theme Preview — JSON",
+  "description": "A JSON document showcasing strings, numbers, booleans, null, arrays, and nested objects.",
+  "version": "1.0.0",
+  "debug": false,
+  "limits": {
+    "maxConnections": 64,
+    "timeoutMs": 5000,
+    "features": ["auth", "cache", "logging"]
+  },
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "name": "nocturne_db",
+    "credentials": {
+      "username": "admin",
+      "password": null
+    }
+  },
+  "routes": [
+    {
+      "path": "/api/users",
+      "method": "GET",
+      "auth": true
+    },
+    {
+      "path": "/api/users/:id",
+      "method": "GET",
+      "auth": true
+    },
+    {
+      "path": "/api/users",
+      "method": "POST",
+      "auth": true,
+      "rateLimit": 10
+    }
+  ],
+  "metadata": {
+    "author": "Hotakus",
+    "tags": ["theme", "dark", "vscode"],
+    "created": "2026-05-04T12:00:00Z"
+  }
+}

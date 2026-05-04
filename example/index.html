@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Theme Preview — Hotakus's Nocturne</title>
+  <style>
+    :root {
+      --primary: #4fc3f7;
+      --bg: #2c2c2c;
+      --text: #b8b8b8;
+    }
+    body {
+      font-family: system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 2rem;
+    }
+    .card {
+      border: 1px solid #444;
+      border-radius: 8px;
+      padding: 1rem;
+      transition: box-shadow 0.2s;
+    }
+    .card:hover {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hotakus&#39;s Nocturne</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="card">
+      <h2>Hello World</h2>
+      <p>This is a <strong>semantic HTML</strong> page with <em>emphasis</em> and <code>inline code</code>.</p>
+      <ul>
+        <li>Unordered item</li>
+        <li>Another item</li>
+      </ul>
+      <ol>
+        <li>Ordered item</li>
+        <li>Second item</li>
+      </ol>
+    </article>
+
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name" />
+      <label for="role">Role:</label>
+      <select id="role" name="role">
+        <option value="dev">Developer</option>
+        <option value="design">Designer</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <small>&copy; 2026 Hotakus</small>
+  </footer>
+
+  <!-- Comment: this is an HTML comment -->
+  <script>
+    console.log("Inline script — testing JS-in-HTML coloring");
+  </script>
+</body>
+</html>

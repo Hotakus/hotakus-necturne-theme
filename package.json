@@ -1,0 +1,20 @@
+{
+	"name": "hotakus",
+	"displayName": "Hotakus's Nocturne",
+	"version": "1.0.0",
+	"publisher": "Hotakus",
+	"description": "A refined dark theme for nocturnal coders — meticulously tuned contrast, semantic highlighting, and a palette that soothes the eyes during late-night sessions.",
+	"license": "MIT",
+	"engines": { "vscode": "^1.60.0" },
+	"categories": ["Themes"],
+	"keywords": ["theme", "dark", "nocturne", "minimal", "semantic highlighting"],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Hotakus's Nocturne",
+				"uiTheme": "vs-dark",
+				"path": "./themes/hotakus.json"
+			}
+		]
+	}
+}

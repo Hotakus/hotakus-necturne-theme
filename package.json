@@ -4,6 +4,10 @@
 	"version": "1.0.0",
 	"publisher": "Hotakus",
 	"description": "A refined dark theme for nocturnal coders — meticulously tuned contrast, semantic highlighting, and a palette that soothes the eyes during late-night sessions.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Hotakus/hotakus-necturne-theme"
+	},
 	"license": "MIT",
 	"engines": { "vscode": "^1.60.0" },
 	"categories": ["Themes"],

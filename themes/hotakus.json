@@ -53,9 +53,10 @@
   },
   "tokenColors": [
     {
-      "name": "Storage type italic",
+      "name": "Storage type italic + subtle blue-gray",
       "scope": "storage.type",
       "settings": {
+        "foreground": "#7a7e82",
         "fontStyle": "italic"
       }
     },

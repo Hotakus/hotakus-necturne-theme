@@ -5,7 +5,7 @@
   "semanticTokenColors": {
     "enumMember": {
       "foreground": "#adadad"
-    },
+    }, 
     "variable.constant": {
       "foreground": "#a1a1a1"
     },
@@ -25,7 +25,8 @@
       "foreground": "#cd9cb3"
     },
     "typeParameter": {
-      "foreground": "#eaab7c"
+      "foreground": "#eaab7c",
+      "fontStyle": "italic"
     },
     "function": {
       "foreground": "#a6d5e8"
@@ -43,13 +44,35 @@
       "foreground": "#eaab7c"
     },
     "decorator": {
-      "foreground": "#d1925b"
+      "foreground": "#d1925b",
+      "fontStyle": "italic"
     },
     "label": {
       "foreground": "#eaab7c"
     }
   },
   "tokenColors": [
+    {
+      "name": "Storage type italic",
+      "scope": "storage.type",
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Storage modifier italic",
+      "scope": "storage.modifier",
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Markdown quote italic",
+      "scope": "markup.quote.markdown",
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
     {
       "name": "unison punctuation",
       "scope": "punctuation.definition.delayed.unison,punctuation.definition.list.begin.unison,punctuation.definition.list.end.unison,punctuation.definition.ability.begin.unison,punctuation.definition.ability.end.unison,punctuation.operator.assignment.as.unison,punctuation.separator.pipe.unison,punctuation.separator.delimiter.unison,punctuation.definition.hash.unison",
@@ -1954,12 +1977,12 @@
     "textLink.foreground": "#a6c8ff",
     "editor.background": "#2c2c2c",
     "editor.foreground": "#b8b8b8",
-    "editorLineNumber.foreground": "#7a7a7a",
+    "editorLineNumber.foreground": "#666666",
     "editorCursor.foreground": "#c1cacb",
     "editorCursor.background": "#242424",
     "editor.selectionBackground": "#383838",
     "editor.inactiveSelectionBackground": "#303030a2",
-    "editorWhitespace.foreground": "#585858",
+    "editorWhitespace.foreground": "#545454",
     "editor.selectionHighlightBackground": "#8a79734c",
     "editor.selectionHighlightBorder": "#f7d2c44c",
     "editor.findMatchBackground": "#4f9fa7a9",
@@ -1979,9 +2002,9 @@
     "editor.lineHighlightBorder": "#2c2c2c00",
     "editorLineNumber.activeForeground": "#d5dfe0",
     "editorLink.activeForeground": "#7aa1c2",
-    "editorIndentGuide.background1": "#4e4e4e",
+    "editorIndentGuide.background1": "#474747",
     "editorIndentGuide.activeBackground1": "#9e9f9f",
-    "editorRuler.foreground": "#4e4e4e",
+    "editorRuler.foreground": "#434343",
     "editorBracketMatch.background": "#0064001a",
     "editorBracketMatch.border": "#888888",
     "editor.foldBackground": "#7d7d7d30",
@@ -2001,7 +2024,7 @@
     "editorGutter.addedBackground": "#a39b5d",
     "editorGutter.deletedBackground": "#cd6167",
     "editorGutter.foldingControlForeground": "#ababab",
-    "editorCodeLens.foreground": "#999999",
+    "editorCodeLens.foreground": "#666666",
     "editorGroup.border": "#515151",
     "diffEditor.insertedTextBackground": "#5a9b8e50",
     "diffEditor.insertedTextBorder": "#ffffff00",

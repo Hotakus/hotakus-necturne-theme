@@ -29,10 +29,10 @@
       "fontStyle": "italic"
     },
     "function": {
-      "foreground": "#a6d5e8"
+      "foreground": "#8ab0b8"
     },
     "method": {
-      "foreground": "#a6d5e8"
+      "foreground": "#8ab0b8"
     },
     "property": {
       "foreground": "#b8b8b8"
@@ -56,20 +56,13 @@
       "name": "Storage type italic + subtle blue-gray",
       "scope": "storage.type",
       "settings": {
-        "foreground": "#7a7e82",
+        "foreground": "#8e8eaa",
         "fontStyle": "italic"
       }
     },
     {
       "name": "Storage modifier italic",
       "scope": "storage.modifier",
-      "settings": {
-        "fontStyle": "italic"
-      }
-    },
-    {
-      "name": "Markdown quote italic",
-      "scope": "markup.quote.markdown",
       "settings": {
         "fontStyle": "italic"
       }
@@ -127,7 +120,7 @@
       "name": "support.function.std.rust",
       "scope": "support.function.std.rust",
       "settings": {
-        "foreground": "#a6d5e8"
+        "foreground": "#8ab0b8"
       }
     },
     {
@@ -183,7 +176,6 @@
       "name": "Comment Markup Link",
       "scope": "comment markup.link",
       "settings": {
-        "foreground": "#7d7d7d"
       }
     },
     {
@@ -437,7 +429,7 @@
       "name": "js console function",
       "scope": "entity.name.function,support.function.console",
       "settings": {
-        "foreground": "#a6d5e8"
+        "foreground": "#8ab0b8"
       }
     },
     {
@@ -651,15 +643,10 @@
       }
     },
     {
-      "name": "Functions",
-      "scope": [
-        "entity.name.function",
-        "meta.require",
-        "support.function.any-method",
-        "variable.function"
-      ],
+"name": "Functions",
+      "scope": "entity.name.function",
       "settings": {
-        "foreground": "#a6d5e8"
+        "foreground": "#8ab0b8"
       }
     },
     {
@@ -896,7 +883,8 @@
       "name": "Bold",
       "scope": "markup.bold,todo.bold",
       "settings": {
-        "foreground": "#a1a1a1"
+        "foreground": "#c8c8c8",
+        "fontStyle": "bold"
       }
     },
     {
@@ -952,7 +940,7 @@
       "name": "[VSCODE-CUSTOM] Markdown Punctuation Definition Bold",
       "scope": "punctuation.definition.bold.markdown",
       "settings": {
-        "foreground": "#a1a1a1"
+        "foreground": "#c8c8c8"
       }
     },
     {
@@ -1766,7 +1754,6 @@
         "beginning.punctuation.definition.list.markdown.xi"
       ],
       "settings": {
-        "foreground": "#7d7d7d"
       }
     },
     {
@@ -1811,7 +1798,7 @@
         "punctuation.definition.tag.xi"
       ],
       "settings": {
-        "foreground": "#7d7d7d"
+        "foreground": "#585858"
       }
     },
     {
@@ -1847,17 +1834,18 @@
     },
     {
       "name": "Comments",
-      "scope": "comment, punctuation.definition.comment",
+      "scope": "comment, comment.line.double-slash, comment.block.documentation, punctuation.definition.comment",
       "settings": {
-        "fontStyle": "italic",
-        "foreground": "#7d7d7d"
+        "foreground": "#585858",
+        "fontStyle": "italic"
       }
     },
     {
-      "name": "[VSCODE-CUSTOM] Markdown Quote",
+      "name": "Markdown Quote italic",
       "scope": "markup.quote.markdown",
       "settings": {
-        "foreground": "#7d7d7d"
+        "foreground": "#8a8a8a",
+        "fontStyle": "italic"
       }
     },
     {
@@ -1883,13 +1871,6 @@
       }
     },
     {
-      "name": "comment",
-      "scope": "comment.line.double-slash,comment.block.documentation",
-      "settings": {
-        "fontStyle": "italic"
-      }
-    },
-    {
       "name": "Python Keyword Control",
       "scope": "keyword.control.import.python,keyword.control.flow.python",
       "settings": {
@@ -1901,6 +1882,41 @@
       "scope": "markup.italic.markdown",
       "settings": {
         "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Markdown Strikethrough",
+      "scope": "markup.strikethrough, punctuation.definition.strikethrough",
+      "settings": {
+        "foreground": "#7a7a7a"
+      }
+    },
+    {
+      "name": "Markdown Task Checked",
+      "scope": "markup.list.checked.markdown, markup.list.checked",
+      "settings": {
+        "foreground": "#5a8668"
+      }
+    },
+    {
+      "name": "Markdown Task Unchecked",
+      "scope": "markup.list.unchecked.markdown, markup.list.unchecked",
+      "settings": {
+        "foreground": "#7a7a7a"
+      }
+    },
+    {
+      "name": "Markdown HR",
+      "scope": "meta.separator.markdown",
+      "settings": {
+        "foreground": "#4a4a4a"
+      }
+    },
+    {
+      "name": "Markdown Fenced Code",
+      "scope": "punctuation.definition.markdown, fenced_code.block.language, punctuation.definition.raw.markdown",
+      "settings": {
+        "foreground": "#8ab0b8"
       }
     }
   ],
@@ -2027,9 +2043,11 @@
     "editorGutter.foldingControlForeground": "#ababab",
     "editorCodeLens.foreground": "#666666",
     "editorGroup.border": "#515151",
-    "diffEditor.insertedTextBackground": "#5a9b8e50",
+    "diffEditor.insertedTextBackground": "#5e826821",
+    "diffEditor.insertedLineBackground": "#5e826821",
     "diffEditor.insertedTextBorder": "#ffffff00",
-    "diffEditor.removedTextBackground": "#6f454550",
+    "diffEditor.removedTextBackground": "#7a5a5a21",
+    "diffEditor.removedLineBackground": "#7a5a5a21",
     "diffEditor.removedTextBorder": "#c49e9e00",
     "diffEditor.border": "#626262",
     "panel.background": "#302f2f",
@@ -2098,15 +2116,15 @@
     "notificationCenterHeader.foreground": "#999999",
     "notificationCenterHeader.background": "#3b3b3b",
     "notifications.border": "#3b3b3b",
-    "gitDecoration.addedResourceForeground": "#81b88b",
-    "gitDecoration.conflictingResourceForeground": "#6c6cc4",
-    "gitDecoration.deletedResourceForeground": "#de6a56",
+    "gitDecoration.addedResourceForeground": "#5a8668",
+    "gitDecoration.conflictingResourceForeground": "#5a5a8a",
+    "gitDecoration.deletedResourceForeground": "#8a5656",
     "gitDecoration.ignoredResourceForeground": "#8c8c8c",
-    "gitDecoration.modifiedResourceForeground": "#e2c08d",
-    "gitDecoration.stageDeletedResourceForeground": "#79382d",
-    "gitDecoration.stageModifiedResourceForeground": "#967f5d",
+    "gitDecoration.modifiedResourceForeground": "#8a7a56",
+    "gitDecoration.stageDeletedResourceForeground": "#6a3a3a",
+    "gitDecoration.stageModifiedResourceForeground": "#6a5a3a",
     "gitDecoration.submoduleResourceForeground": "#b8d0e6",
-    "gitDecoration.untrackedResourceForeground": "#cbab00",
+    "gitDecoration.untrackedResourceForeground": "#8a7a3a",
     "editorMarkerNavigation.background": "#313134",
     "editorMarkerNavigationError.background": "#be6666f7",
     "editorMarkerNavigationWarning.background": "#dbd572",
@@ -2164,6 +2182,11 @@
     "breadcrumb.activeSelectionForeground": "#dedede",
     "editorGutter.commentRangeForeground": "#ababab",
     "debugExceptionWidget.background": "#363636",
-    "debugExceptionWidget.border": "#494949"
+    "debugExceptionWidget.border": "#494949",
+    "debugIcon.breakpointForeground": "#a06060",
+    "debugIcon.breakpointDisabledForeground": "#a0606060",
+    "debugIcon.breakpointUnverifiedForeground": "#a0606070",
+    "debugIcon.breakpointCurrentStackframeForeground": "#c0a050",
+    "debugIcon.breakpointStackframeForeground": "#a0606080"
   }
 }

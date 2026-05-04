@@ -1,18 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
-  <!-- Background -->
-  <rect width="128" height="128" rx="18" fill="#2c2c2c" />
-  <rect x="1" y="1" width="126" height="126" rx="17" fill="none" stroke="#3a3a4a" stroke-width="0.5" />
+  <rect width="128" height="128" rx="16" fill="#2c2c2c" />
 
-  <!-- Left bracket < -->
-  <path d="M 38,44 L 26,64 L 38,84" fill="none" stroke="#8e8eaa" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="28" y="80"
+        font-family="Consolas, 'Courier New', monospace"
+        font-size="46" font-weight="300"
+        fill="#8e8eaa"
+        text-anchor="middle">&lt;</text>
 
-  <!-- N — two verticals + diagonal -->
-  <path d="M 48,84 L 48,42 L 74,78 L 74,84" fill="none" stroke="#eaab7c" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="58" y="81"
+        font-family="Consolas, 'Courier New', monospace"
+        font-size="52" font-weight="700"
+        fill="#eaab7c"
+        text-anchor="middle">N</text>
 
-  <!-- Right bracket /> — slash first, then bracket -->
-  <path d="M 100,44 L 88,64 L 100,84" fill="none" stroke="#8e8eaa" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M 82,42 L 96,86" fill="none" stroke="#8e8eaa" stroke-width="4" stroke-linecap="round" opacity="0.7" />
+  <text x="86" y="80"
+        font-family="Consolas, 'Courier New', monospace"
+        font-size="42" font-weight="500"
+        fill="#8e8eaa"
+        text-anchor="middle">/</text>
 
-  <!-- Cursor accent dot -->
-  <circle cx="78" cy="98" r="2.5" fill="#8ab0b8" opacity="0.6" />
+  <text x="100" y="80"
+        font-family="Consolas, 'Courier New', monospace"
+        font-size="46" font-weight="300"
+        fill="#8e8eaa"
+        text-anchor="middle">&gt;</text>
 </svg>

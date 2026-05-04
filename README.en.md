@@ -6,6 +6,7 @@
   <img src="https://img.shields.io/badge/License-MIT-brightgreen?style=flat-square" alt="License">
   <img src="https://img.shields.io/badge/Theme-Dark-2c2c2c?style=flat-square" alt="Theme">
   <img src="https://img.shields.io/github/stars/Hotakus/hotakus-necturne-theme?style=flat-square&color=ffa726" alt="Stars">
+  <img src="https://img.shields.io/visual-studio-marketplace/d/Hotakus.hotakus?style=flat-square&color=4fc3f7" alt="Downloads">
   <a href="./README.md"><img src="https://img.shields.io/badge/README-ZH-c08078?style=flat-square" alt="中文"></a>
 </p>
 

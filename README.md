@@ -8,9 +8,7 @@
   <img src="https://img.shields.io/github/stars/Hotakus/hotakus-necturne-theme?style=for-the-badge&color=ffa726" alt="Stars">
 </p>
 
-<p align="center"><em>一款为深夜编码者精心打磨的暗色主题 —— 柔和对比度、语义高亮、不伤眼的配色，陪伴你度过每一个编码之夜。</em></p>
-
-<p align="center">「好的代码，值得一个温柔的夜晚。」</p>
+<p align="center"><em>一个暗色 VS Code 主题，低对比度配色 + 语义高亮，看代码不累。</em></p>
 
 ---
 

@@ -8,9 +8,7 @@
   <img src="https://img.shields.io/github/stars/Hotakus/hotakus-necturne-theme?style=for-the-badge&color=ffa726" alt="Stars">
 </p>
 
-<p align="center"><em>A refined dark theme for nocturnal coders — meticulously tuned contrast, semantic highlighting, and a palette that soothes the eyes during late-night sessions.</em></p>
-
-<p align="center">「Good code deserves a good night.」</p>
+<p align="center"><em>A dark VS Code theme with low-contrast colors and semantic highlighting — easy on the eyes.</em></p>
 
 ---
 

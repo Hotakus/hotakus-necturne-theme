@@ -1,8 +1,16 @@
-# Hotakus's Nocturne
+<h1 align="center">Hotakus's Nocturne</h1>
 
-A refined dark theme for nocturnal coders — meticulously tuned contrast, semantic highlighting, and a palette that soothes the eyes during late-night sessions.
+<p align="center">
+  <img src="https://img.shields.io/github/v/release/Hotakus/hotakus-necturne-theme?style=for-the-badge&color=4fc3f7&label=Version" alt="Version">
+  <img src="https://img.shields.io/badge/VS%20Code-%5E1.60.0-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code">
+  <img src="https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/badge/Theme-Dark-2c2c2c?style=for-the-badge" alt="Theme">
+  <img src="https://img.shields.io/github/stars/Hotakus/hotakus-necturne-theme?style=for-the-badge&color=ffa726" alt="Stars">
+</p>
 
-> *"Good code deserves a good night."*
+<p align="center"><em>A refined dark theme for nocturnal coders — meticulously tuned contrast, semantic highlighting, and a palette that soothes the eyes during late-night sessions.</em></p>
+
+<p align="center">「Good code deserves a good night.」</p>
 
 ---
 

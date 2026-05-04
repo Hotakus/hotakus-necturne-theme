@@ -1,4 +1,4 @@
-# Hotakus's Nocturne
+<h1 align="center">Hotakus's Nocturne</h1>
 
 <p align="center">
   <img src="https://img.shields.io/github/v/release/Hotakus/hotakus-necturne-theme?style=for-the-badge&color=4fc3f7&label=Version" alt="Version">

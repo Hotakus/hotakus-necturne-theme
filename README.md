@@ -10,106 +10,71 @@
 
 <p align="center"><em>一个暗色 VS Code 主题，低对比度配色 + 语义高亮，看代码不累。</em></p>
 
+<img src="assets/整体界面展示.png" alt="整体界面" />
+
 ---
 
 ## ✨ 特性
 
-- **深邃温暖的暗色背景**（`#2c2c2c`）—— 长时间编码不刺眼
-- **语义高亮**（Semantic Highlighting）—— 基于 VS Code 语义 Token API，提供更丰富的语法着色
-- **241 条手动调校的 Token 着色规则** —— 覆盖关键字、类型、函数、变量、字符串等全方位
-- **平衡的对比度** —— 前景色 `#b8b8b8`，清晰但不尖锐
-- **克制的点缀色** —— 珊瑚标点、琥珀参数、青色函数、淡紫类型
-- **完整的工作台美化** —— 侧边栏、标签页、终端、Git 装饰、Peek View、建议提示框、调试工具栏全部覆盖
-- **语言专项优化** —— Python、Rust、Haskell 等语言有针对性着色规则
+- **低对比度暗色** — 背景 `#2c2c2c`，前景 `#b8b8b8`，长时间编码不刺眼
+- **语义高亮** — 15 个语义 Token 覆盖类、函数、参数、属性、装饰器等，全部对齐 TextMate 配色
+- **17 色分层次色板** — 变量、类型、命名空间、标点、字符串各有独立色系
+- **策略性斜体** — 声明型关键字、修饰符、泛型参数、装饰器斜体，流程控制直立
+- **工作台完整美化** — 侧边栏、标签页、终端、Git 装饰、Diff 视图、调试工具栏、断点指示器
+- **Git 低存在感配色** — SCM 面板和 Diff 差异视图低透明度着色
+- **260+ 条 Token 规则** — 覆盖 15+ 种语言
 
-## 🎨 配色板
+## 🎨 色板
 
-| 角色 | 色值 | 预览 |
-|------|------|------|
-| 编辑器背景 | `#2c2c2c` | ![#2c2c2c](https://placehold.co/12x12/2c2c2c/2c2c2c) |
-| 编辑器前景 | `#b8b8b8` | ![#b8b8b8](https://placehold.co/12x12/b8b8b8/b8b8b8) |
-| 关键字 | `#eaab7c` 暖琥珀 | ![#eaab7c](https://placehold.co/12x12/eaab7c/eaab7c) |
-| 函数 / 标准库 | `#a6d5e8` 柔青 | ![#a6d5e8](https://placehold.co/12x12/a6d5e8/a6d5e8) |
-| 字符串 | `#b9b9b9` 银灰 | ![#b9b9b9](https://placehold.co/12x12/b9b9b9/b9b9b9) |
-| 类型 / 类 | `#cd9cb3` 淡紫灰 | ![#cd9cb3](https://placehold.co/12x12/cd9cb3/cd9cb3) |
-| 标点符号 | `#e87d77` 珊瑚红 | ![#e87d77](https://placehold.co/12x12/e87d77/e87d77) |
-| 注释 | `#7b7b7b` 暗灰 | ![#7b7b7b](https://placehold.co/12x12/7b7b7b/7b7b7b) |
-| 错误 / 删除 | `#f48771` 柔红 | ![#f48771](https://placehold.co/12x12/f48771/f48771) |
-| 新增 / Git Added | `#81b88b` 鼠尾绿 | ![#81b88b](https://placehold.co/12x12/81b88b/81b88b) |
+| 角色 | 色值 | 对比度 |
+|------|------|--------|
+| 正文 | `#b8b8b8` | 7.04:1 |
+| 类型 / 类名 | `#eaab7c` 暖琥珀 | 7.06:1 |
+| 函数 / 方法 | `#8ab0b8` 青蓝 | 5.5:1 |
+| 变量 / 属性 | `#d09090` 尘玫红 | 4.7:1 |
+| 声明关键字 | `#8e8eaa` 紫灰 + 斜体 | 4.2:1 |
+| 字符串 | `#6a8a80` 暗鼠尾 | 3.6:1 |
+| 原始类型 | `#7a9a90` 冷鼠尾 | ~4.5:1 |
+| 命名空间 | `#c0a068` 暗琥珀 | ~5:1 |
+| 标点 | `#9a9a9a` 暗灰 | ~4:1 |
+| 注释 | `#585858` 极暗灰 + 斜体 | 2.0:1 |
 
 ## 📦 安装
-
-### VS Code 扩展市场
 
 ```bash
 code --install-extension hotakus.hotakus
 ```
 
-或在扩展视图（`Ctrl+Shift+X`）中搜索 **「Hotakus's Nocturne」**。
+或 `Ctrl+Shift+X` 搜索 **Hotakus's Nocturne**。
 
-### 手动安装（.vsix）
+也可从 [Releases](https://github.com/Hotakus/hotakus-necturne-theme/releases) 下载 `.vsix` 手动安装。
 
-1. 从 [Releases](https://github.com/Hotakus/hotakus-necturne-theme/releases) 下载 `hotakus-*.vsix`
-2. 打开 VS Code，`Ctrl+Shift+P` → 运行 **「Extensions: Install from VSIX…」**
-3. 选择下载的文件即可
+## 🌐 语言覆盖
 
-### 从源码安装
+| 语言 | 文件 | 特色着色 |
+|------|------|---------|
+| TypeScript | `example/typescript.ts` | 泛型、装饰器、类型守卫 |
+| JavaScript | `example/javascript.js` | 类、Promise、解构 |
+| C | `example/c_lang.c` | 宏、预处理器、指针 |
+| C++ | `example/cpp.cpp` | 模板、RAII、concepts |
+| Python | `example/python.py` | 装饰器、async、dataclass |
+| Rust | `example/rust.rs` | trait、生命周期、enum |
+| Go | `example/go.go` | goroutine、channel、interface |
+| Java | `example/java.java` | 泛型、lambda、stream |
+| HTML | `example/index.html` | 语义标签、属性 |
+| CSS | `example/styles.css` | 自定义属性、伪类、函数 |
+| JSON | `example/config.json` | 嵌套对象、数组 |
+| YAML | `example/config.yaml` | 锚点、别名、多行 |
+| Markdown | `example/markdown.md` | 表格、代码块、引用 |
+| SVG | `example/sample.svg` | 形状、渐变、路径 |
+| Shell | `example/script.sh` | 变量、函数、heredoc |
 
-```bash
-git clone https://github.com/Hotakus/hotakus-necturne-theme.git
-cp -r hotakus-necturne-theme ~/.vscode/extensions/hotakus
-# 重启 VS Code
-```
+## 🖼️ Git & Diff
 
-## 🚀 启用
-
-安装后，切换到主题：
-
-1. `Ctrl+K Ctrl+T`（或 `Ctrl+Shift+P` → **「首选项: 颜色主题」**）
-2. 选择 **「Hotakus's Nocturne」**
-
----
-
-## ⚙️ 推荐设置
-
-以下设置与本主题搭配效果最佳：
-
-```json
-{
-  "editor.fontFamily": "'Maple Mono SC NF', 'Cascadia Code', 'Fira Code', monospace",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 16,
-  "editor.lineHeight": 1.6,
-  "editor.cursorBlinking": "smooth",
-  "workbench.iconTheme": "material-icon-theme"
-}
-```
-
-## 🌐 支持的语言
-
-主题包含以下语言的显式着色规则：
-
-- **Python** — `self` 参数、魔法变量、分隔符
-- **Rust** — 生命周期、标准库函数、泛型
-- **Haskell** — 泛型类型、存储类型
-- **Unison** — 标点、运算符
-
-此外，通用的 Token scope 也覆盖了 **JavaScript、TypeScript、C/C++、Go、Java、C#、JSON、YAML、Markdown、HTML、CSS** 等众多语言。
-
-## 📝 开发
-
-```bash
-# 打包 .vsix
-npx @vscode/vsce package
-
-# 本地安装测试
-code --install-extension hotakus-1.0.0.vsix
-```
+<img src="assets/git相关.png" alt="Git 界面" />
 
 ---
 
 <p align="center">
-  <sub>基于原始主题深度定制 · 专为夜间编码美学重新雕琢</sub>
-  <br>
   <sub>English README <a href="./README.en.md">here</a> | MIT © Hotakus</sub>
 </p>

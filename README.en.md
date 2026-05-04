@@ -10,95 +10,71 @@
 
 <p align="center"><em>A dark VS Code theme with low-contrast colors and semantic highlighting — easy on the eyes.</em></p>
 
+<img src="assets/整体界面展示.png" alt="Overview" />
+
 ---
 
-## Features
+## ✨ Features
 
-- **Deep, warm dark background** (`#2c2c2c`) — easy on the eyes for hours of coding
-- **Semantic highlighting** enabled — richer token differentiation powered by VS Code's semantic tokens API
-- **241 hand-tuned token color rules** — coverage across keywords, types, functions, variables, strings, and more
-- **Balanced contrast** — foreground text at `#b8b8b8` with clear but not harsh distinction
-- **Subtle accent colors** — coral punctuations, amber parameters, teal functions, lavender types
-- **Full workbench styling** — sidebar, tabs, terminal, git decorations, Peek View, Suggest widget, Debug toolbar all themed
-- **Language-specific refinements** — Python, Rust, Haskell, and more with targeted scopes
+- **Low-contrast dark background** — `#2c2c2c` / `#b8b8b8`, comfortable for hours
+- **Semantic highlighting** — 15 tokens for classes, functions, parameters, decorators, all aligned with TextMate
+- **17-color layered palette** — variables, types, namespaces, punctuation, strings each get distinct hues
+- **Strategic italics** — only for declarations, modifiers, type parameters, and decorators; flow control stays upright
+- **Full workbench styling** — sidebar, tabs, terminal, Git decorations, Diff view, Debug toolbar, breakpoints
+- **Low-profile Git** — muted SCM panel and subtle diff backgrounds
+- **260+ token rules** across 15+ languages
 
-## Color Palette
+## 🎨 Color Palette
 
-| Role | Hex | Preview |
-|------|-----|---------|
-| Editor Background | `#2c2c2c` | ![#2c2c2c](https://placehold.co/12x12/2c2c2c/2c2c2c) |
-| Editor Foreground | `#b8b8b8` | ![#b8b8b8](https://placehold.co/12x12/b8b8b8/b8b8b8) |
-| Keywords | `#eaab7c` (warm amber) | ![#eaab7c](https://placehold.co/12x12/eaab7c/eaab7c) |
-| Functions / Stdlib | `#a6d5e8` (soft teal) | ![#a6d5e8](https://placehold.co/12x12/a6d5e8/a6d5e8) |
-| Strings | `#b9b9b9` (silver) | ![#b9b9b9](https://placehold.co/12x12/b9b9b9/b9b9b9) |
-| Types / Classes | `#cd9cb3` (dusty lavender) | ![#cd9cb3](https://placehold.co/12x12/cd9cb3/cd9cb3) |
-| Punctuation | `#e87d77` (muted coral) | ![#e87d77](https://placehold.co/12x12/e87d77/e87d77) |
-| Comments | `#7b7b7b` (dim gray) | ![#7b7b7b](https://placehold.co/12x12/7b7b7b/7b7b7b) |
-| Errors / Deletions | `#f48771` (soft red) | ![#f48771](https://placehold.co/12x12/f48771/f48771) |
-| Additions / Git Added | `#81b88b` (sage green) | ![#81b88b](https://placehold.co/12x12/81b88b/81b88b) |
+| Role | Hex | Contrast |
+|------|-----|----------|
+| Text | `#b8b8b8` | 7.04:1 |
+| Types / Classes | `#eaab7c` warm amber | 7.06:1 |
+| Functions / Methods | `#8ab0b8` teal | 5.5:1 |
+| Variables / Properties | `#d09090` dusty rose | 4.7:1 |
+| Storage keywords | `#8e8eaa` muted purple + italic | 4.2:1 |
+| Strings | `#6a8a80` muted sage | 3.6:1 |
+| Primitives | `#7a9a90` cool sage | ~4.5:1 |
+| Namespaces | `#c0a068` dark amber | ~5:1 |
+| Punctuation | `#9a9a9a` dim gray | ~4:1 |
+| Comments | `#585858` very dim gray + italic | 2.0:1 |
 
-## Installation
-
-### VS Code Marketplace *(coming soon)*
+## 📦 Install
 
 ```bash
 code --install-extension hotakus.hotakus
 ```
 
-Or search for **"Hotakus's Nocturne"** in the Extensions view (`Ctrl+Shift+X`).
+Or search **Hotakus's Nocturne** in Extensions (`Ctrl+Shift+X`).
 
-### Manual (via `.vsix`)
+Manual install via `.vsix` from [Releases](https://github.com/Hotakus/hotakus-necturne-theme/releases).
 
-1. Download `hotakus-*.vsix` from [Releases](https://github.com/your-repo/releases)
-2. Open VS Code, press `Ctrl+Shift+P`, run **"Extensions: Install from VSIX…"**
-3. Select the downloaded file
+## 🌐 Languages
 
-### From Source
+| Language | File | Highlights |
+|----------|------|-----------|
+| TypeScript | `example/typescript.ts` | Generics, decorators, type guards |
+| JavaScript | `example/javascript.js` | Classes, Promise, destructuring |
+| C | `example/c_lang.c` | Macros, preprocessor, pointers |
+| C++ | `example/cpp.cpp` | Templates, RAII, concepts |
+| Python | `example/python.py` | Decorators, async, dataclass |
+| Rust | `example/rust.rs` | Traits, lifetimes, enums |
+| Go | `example/go.go` | Goroutines, channels, interface |
+| Java | `example/java.java` | Generics, lambda, stream |
+| HTML | `example/index.html` | Semantic tags, attributes |
+| CSS | `example/styles.css` | Custom props, pseudo, functions |
+| JSON | `example/config.json` | Nested objects, arrays |
+| YAML | `example/config.yaml` | Anchors, aliases, multiline |
+| Markdown | `example/markdown.md` | Tables, code blocks, quote |
+| SVG | `example/sample.svg` | Shapes, gradients, paths |
+| Shell | `example/script.sh` | Variables, functions, heredoc |
 
-```bash
-git clone <repo-url>
-cp -r hotakus ~/.vscode/extensions/hotakus
-# Restart VS Code
-```
+## 🖼️ Git & Diff
 
-## Activation
-
-After installation, activate the theme:
-
-1. `Ctrl+K Ctrl+T` (or `Ctrl+Shift+P` → **"Preferences: Color Theme"**)
-2. Select **"Hotakus's Nocturne"**
+<img src="assets/git相关.png" alt="Git view" />
 
 ---
 
-## Recommended Settings
-
-These complement the theme nicely:
-
-```json
-{
-  "editor.fontFamily": "'Maple Mono SC NF', 'Cascadia Code', 'Fira Code', monospace",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 16,
-  "editor.lineHeight": 1.6,
-  "editor.cursorBlinking": "smooth",
-  "workbench.iconTheme": "material-icon-theme"
-}
-```
-
-## Supported Languages
-
-The theme includes explicit token rules for:
-
-- Python (self params, magic variables, separators)
-- Rust (lifetimes, stdlib functions, generics)
-- Haskell (generic types, storage types)
-- Unison (punctuation, operators)
-- …plus generic scopes covering **JavaScript, TypeScript, C/C++, Go, Java, C#, JSON, YAML, Markdown, HTML, CSS** and many more.
-
-## Credits
-
-Based on and heavily customized from an original theme. Re-sculpted for the nocturne aesthetic — darker backgrounds, softer highlights, and warmer accents.
-
-## License
-
-MIT © Hotakus
+<p align="center">
+  <sub>Chinese README <a href="./README.md">here</a> | MIT © Hotakus</sub>
+</p>
